@@ -100,7 +100,7 @@ SSH into the control node and follow the steps below:
 - Update the Ansible hosts file to include the internal IPs of the target VMs. 
 - Copy the playbook file to the Ansible control node.
 - Update the config file to include your internal ELk Ip address
-- Run the playbook, and navigate to http://<elk_external_IP>:5601/app/kibana or run curl http://<internal_IP_of_elk>:5601 to check that the installation worked as expected.
+- Run the playbook, and navigate to http://<elk_external_IP>:5601/app/kibana or ssh into elk-sesrver and run curl http://<internal_IP_of_elk>:5601 to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it? filebeat-playbook.yml and metricbeat-playbook.yml. Copy into /etc/ansible/roles.
